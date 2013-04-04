@@ -1,0 +1,46 @@
+/* example (with default height and background-size)
+.login h1 a {
+  height: 67px
+  background-image: url(img/my-login-logo.png);
+  background-size: 274px 63px;
+}
+*/
+
+/* example
+.wp-core-ui .button-primary {
+  background: #C00000;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E00000), to(#C00000));
+  background: -webkit-linear-gradient(top, #E00000, #C00000);
+  background: -moz-linear-gradient(top, #E00000, #C00000);
+  background: -ms-linear-gradient(top, #E00000, #C00000);
+  background: -o-linear-gradient(top, #E00000, #C00000);
+  -webkit-box-shadow: -5px 1px 6px #B11C1C inset;
+  -moz-box-shadow: -5px 1px 6px #b11c1c inset;
+  box-shadow: -5px 1px 6px #B11C1C inset;
+  border: #E00000;
+  border-bottom: #C00000;
+}
+*/
+
+/* example
+.wp-core-ui .button-primary:hover {
+  background: #E00000;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E00000), to(#F00));
+  background: -webkit-linear-gradient(top, #E00000, #F00);
+  background: -moz-linear-gradient(top, #E00000, #F00);
+  background: -ms-linear-gradient(top, #E00000, #F00);
+  background: -o-linear-gradient(top, #E00000, #F00);
+}
+*/
+
+/* example
+a, .login #nav a, .login #backtoblog a {
+  color: #C00000!important;
+}
+*/
+
+/* example
+a:hover, .login #nav a:hover, .login #backtoblog a:hover {
+  color: #f00!important;
+}
+*/

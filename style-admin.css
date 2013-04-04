@@ -1,0 +1,6 @@
+/* Custom css to be used with 
+ * inc/custom-admin-css.php
+ */
+#wpwrap {
+  margin-top: -1rem;
+}

@@ -1,0 +1,6 @@
+/* Custom css to be used with 
+ * inc/custom-excerpt.php
+ */
+.mtws_custom_excerpt_textarea {
+  background: #fff;
+}
