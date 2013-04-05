@@ -1,6 +1,10 @@
 ﻿<?php
 /* A custom metbox containing with a tinymce editor
  *
+ * NOTE! This scritp needs the following files to work:
+ * custom-excerpt-editor-style.css
+ * custom-excerpt-main-content-editor-style.css
+ *
  * http://codex.wordpress.org/Function_Reference/add_meta_box#Example
  * http://codex.wordpress.org/Function_Reference/wp_editor
  */
@@ -118,8 +122,16 @@ add_action( 'admin_enqueue_scripts', 'move_posteditor', 10, 1 );
 function move_posteditor_scripts() {
     ?>
     <script type="text/javascript">
-        //jQuery('#postdiv, #postdivrich').prependTo('#mtws_custom_excerpt_sectionid .inside' );
         jQuery('#mtws_custom_excerpt_sectionid').insertAfter('#titlediv' );
+        jQuery('.postarea').wrap('<div id="mtws_main_content_wrap" class="postbox" />');
+        jQuery('#wp-content-wrap').wrap('<div class="inside" />');
+        jQuery('.postarea .mceIframeContainer').css('background-color', 'red');
+        jQuery('.postarea').prepend('<h3 class="hndle"><span>Artikkelin sis&auml;lt&ouml; - kirjoita artikkelin varsinainen sis&auml;lt&ouml; t&auml;h&auml;n</span></h3>');
 </script>
 <?php }
-?>
+/* Load css to style the main editor */
+function mtws_load_custom_excerpt_content_editor_style() {
+    wp_register_style( 'custom_excerpt_main_content_wp_admin_css', get_bloginfo( 'stylesheet_directory' ) . '/custom-excerpt-main-content-editor-style.css', false, '1.0.0' );
+    wp_enqueue_style( 'custom_excerpt_main_content_wp_admin_css' );
+}
+add_action( 'admin_enqueue_scripts', 'mtws_load_custom_excerpt_content_editor_style' );
