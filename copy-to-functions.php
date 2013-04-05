@@ -1,10 +1,19 @@
 <?php
 /**
- * Copy the below to your functions.php file as neede
+ * Copy the below to your functions.php file as needed
  *
- * Last edited 2013-04-04
+ * You can try copying the content of the included file directly to functions.php
+ * if require(...); causes any problems (eg. user can't log out).
+ *
+ * Last edited 2013-04-05
  */
 
+
+/**
+ * Enqueue conditional styles
+ */
+require( get_template_directory() . '/inc/enqueue-conditional-styles.php' );
+ 
 
 /**
  * Hide admin-menu items
