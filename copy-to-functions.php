@@ -58,6 +58,21 @@ require( get_template_directory() . '/inc/remove-items-from-toolbar.php' );
 
 
 /**
+ * Give the TinyMCE edtitor a custom stylesheet
+ */
+function mtws_theme_add_editor_styles() {
+    add_editor_style( 'custom-editor-style.css' );
+}
+add_action( 'init', 'mtws_theme_add_editor_styles' );
+
+
+/**
+ * Change the order of the tinymce buttons
+ */
+require( get_template_directory() . '/inc/customize-tinymce.php' );
+
+
+/**
  * Create a custom excerpt metabox with tinymce
  */
 require( get_template_directory() . '/inc/custom-excerpt.php' );
