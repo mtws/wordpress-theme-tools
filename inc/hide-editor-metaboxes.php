@@ -16,7 +16,13 @@ function mtws_remove_meta_boxes() {
   remove_meta_box('categorydiv', 'post', 'normal');
   remove_meta_box('tagsdiv-post_tag', 'post', 'normal');
 }
+
+/* the featured image box removal function must be attached to do_meta_boxes */
+function mtws_remove_thumbnail_box() {
+    remove_meta_box( 'postimagediv','post','side' );
+}
 if (!current_user_can( 'manage_options' )) {
   add_action( 'admin_menu', 'mtws_remove_meta_boxes' );
+  add_action('do_meta_boxes', 'mtws_remove_thumbnail_box');
 }
 ?>
