@@ -1,0 +1,16 @@
+/* import the sama stylesheet that is used by the theme */
+/* @import url( 'my-sass-framework/my-project.min.css' ); */
+
+/* Add overwrites as needed so that the content of the editor field is attractive and not broken */
+/*body { padding: 0; background: #fff; } */
+html {
+  /* if your body has a background image, move it to html */
+  /*background: white url(img/bg.jpg) no-repeat center top; */
+}
+body {
+  /* give the body a bit of padding so that text is readable in the editor */
+  padding: 10px;
+  /* override the font settings of the default tinymce skin, this must be done
+     if the base fonts in the main theme stylesheet are defined to the html tag */
+  font: 1em/1.5 "Helvetica Neue", sans-serif;
+}
