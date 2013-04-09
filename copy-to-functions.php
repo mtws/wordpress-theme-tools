@@ -1,11 +1,6 @@
 <?php
 /**
  * Copy the below to your functions.php file as needed
- *
- * You can try copying the content of the included file directly to functions.php
- * if require(...); causes any problems (eg. user can't log out).
- *
- * Last edited 2013-04-05
  */
 
 
