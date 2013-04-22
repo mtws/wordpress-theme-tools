@@ -3,6 +3,10 @@
  * Copy the below to your functions.php file as needed
  */
 
+/**
+ * Increase security by hiding the WP version number
+ */
+require( get_template_directory() . '/inc/hide-wp-version.php' );
 
 /**
  * Enqueue conditional styles
