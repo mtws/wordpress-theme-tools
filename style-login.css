@@ -1,6 +1,7 @@
 /* example (with default height and background-size)
 .login h1 a {
-  height: 67px
+  height: 67px;
+  width: 80px;
   background-image: url(img/my-login-logo.png);
   background-size: 274px 63px;
 }
