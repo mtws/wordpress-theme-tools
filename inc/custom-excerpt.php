@@ -1,7 +1,7 @@
 ﻿<?php
-/* A custom metbox containing with a tinymce editor
+/* A custom metabox containing a tinymce editor
  *
- * NOTE! This scritp needs the following files to work:
+ * NOTE! This script needs the following files to work:
  * custom-excerpt-editor-style.css
  * custom-excerpt-main-content-editor-style.css
  *
