@@ -12,5 +12,5 @@ body {
   padding: 10px;
   /* override the font settings of the default tinymce skin, this must be done
      if the base fonts in the main theme stylesheet are defined to the html tag */
-  font: 1em/1.5 "Helvetica Neue", sans-serif;
+  font: inherit;
 }
