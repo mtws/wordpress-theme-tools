@@ -5,4 +5,3 @@ function mtws_load_custom_wp_admin_style() {
   wp_enqueue_style( 'custom_wp_admin_css' );
 }
 add_action( 'admin_enqueue_scripts', 'mtws_load_custom_wp_admin_style' );
-?>

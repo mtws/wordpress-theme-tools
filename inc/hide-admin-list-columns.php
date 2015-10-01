@@ -24,4 +24,3 @@ function mtws_page_columns_filter( $columns ) {
 if (!current_user_can( 'manage_options' )) {
   add_filter( 'manage_edit-page_columns', 'mtws_page_columns_filter', 10, 1 );
 }
-?>

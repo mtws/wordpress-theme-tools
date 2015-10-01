@@ -13,4 +13,3 @@ function mtws_conditional_styles() {
   wp_enqueue_style( 'ie-8-and-below-styles' );
 }
 add_action( 'wp_enqueue_scripts', 'mtws_conditional_styles' );
-?>

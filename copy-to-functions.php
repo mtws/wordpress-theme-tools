@@ -4,12 +4,21 @@
  */
 
 /**
- * Increase security by hiding the WP version number
+ * Remove tags that WordPress generates inside <head> eg.
+ * rss-feed links, rsd_link, wlmanifest, wp version, next/prev rels, shortlink,
+ * recent comment inline styles, wp emojicons scripts and styles
  */
-require( get_template_directory() . '/inc/hide-wp-version.php' );
+require( get_template_directory() . '/inc/cleanup_head.php' );
+
 
 /**
- * Enqueue conditional styles
+ * Remove version query string from scripts and stylesheets
+ */
+require( get_template_directory() . '/inc/remove_version_querys_string_from_styles_and_scripts.php' );
+
+
+/**
+ * Enqueue conditional styles, for example: stylesheet for IE 8 and below (lt IE 9)
  */
 require( get_template_directory() . '/inc/enqueue-conditional-styles.php' );
  
@@ -27,6 +36,12 @@ require( get_template_directory() . '/inc/hide-admin-list-columns.php' );
 
 
 /**
+ * Show post thumbnails in admin post columns
+ */
+require( get_template_directory() . '/inc/show_thumbnails_in_post_columns.php' );
+
+
+/**
  * Hide dashboard widgets in the admin area
  */
 require( get_template_directory() . '/inc/hide-admin-dashboard-widgets.php' );
@@ -39,21 +54,54 @@ require( get_template_directory() . '/inc/hide-editor-metaboxes.php' );
 
 
 /**
- * Custom login page
+ * Customize login page (css, logo link url, logo title)
  */
 require( get_template_directory() . '/inc/custom-login-page.php' );
-
-
-/**
- * Custom admin css
- */
-require( get_template_directory() . '/inc/custom-admin-css.php' );
 
 
 /**
  * Remove items from the toolbar (previously known as admin bar)
  */
 require( get_template_directory() . '/inc/remove-items-from-toolbar.php' );
+
+
+/**
+ * Add Google Analytics to header
+ */ 
+require( get_template_directory() . '/inc/add_google_analytics_to_header.php' );
+
+
+/**
+ * Change default embed size
+ */ 
+require( get_template_directory() . '/inc/change_default_embed_size.php' );
+
+
+/**
+ * Add HTML5 shiv to header
+ * remembert to download the js file to your thmeme
+ * https://github.com/aFarkas/html5shiv
+ */ 
+require( get_template_directory() . '/inc/add_html5_shiv.php' );
+
+
+/**
+ * Add DNS prefetching
+ */ 
+require( get_template_directory() . '/inc/add_dns_prefetching.php' );
+
+
+/**
+ * Add conditional inline script to footer
+ * eg. depends on jQuery
+ */ 
+require( get_template_directory() . '/inc/add_conditional_inline_scripts_to_footer.php' );
+
+
+/**
+ * Custom admin css
+ */
+require( get_template_directory() . '/inc/custom-admin-css.php' );
 
 
 /**

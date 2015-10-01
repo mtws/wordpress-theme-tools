@@ -14,9 +14,8 @@ function mtws_remove_menu_pages() {
   
   remove_submenu_page( 'edit.php', 'edit-tags.php?taxonomy=category' );
   remove_submenu_page( 'edit.php', 'edit-tags.php?taxonomy=post_tag' );
+  //remove_submenu_page( 'options-general.php', 'options-media.php' );
    // $page[0] is the menu title
    // $page[1] is the minimum level or capability required
    // $page[2] is the URL to the item's file
 }
-
-?>

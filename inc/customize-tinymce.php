@@ -49,4 +49,3 @@ function mtws_extended_editor_mce_buttons_3($buttons) {
 return array(
 'image', 'separator', 'tablecontrols', 'separator', 'fullscreen', 'wordpress');
 }
-?>
