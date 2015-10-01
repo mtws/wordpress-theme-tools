@@ -123,3 +123,8 @@ require( get_template_directory() . '/inc/customize-tinymce.php' );
  * Create a custom excerpt metabox with tinymce
  */
 require( get_template_directory() . '/inc/custom-excerpt.php' );
+
+/**
+ * A lot of examples of them customizer controls, use what you need
+ */
+require( get_template_directory() . '/inc/theme_customizer.php' );
