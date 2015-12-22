@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /* Hide columns from posts and page listings */
 function mtws_columns_filter( $columns ) {
     //unset($columns['author']);

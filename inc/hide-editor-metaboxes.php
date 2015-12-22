@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 function mtws_remove_meta_boxes() {
     //remove_meta_box('linktargetdiv', 'link', 'normal');
     //remove_meta_box('linkxfndiv', 'link', 'normal');

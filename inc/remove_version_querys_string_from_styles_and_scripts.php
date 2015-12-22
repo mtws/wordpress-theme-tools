@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // remove version query string from scripts and stylesheets
 function wcs_remove_script_styles_version( $src ){
     return remove_query_arg( 'ver', $src );

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /* Remove items from the toolbar (admin bar) 
  * http://codex.wordpress.org/Function_Reference/remove_node
  */
