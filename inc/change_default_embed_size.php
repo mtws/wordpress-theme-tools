@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Change default embed size
  */ 

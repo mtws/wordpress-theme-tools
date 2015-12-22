@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // removes category feed and feeds for current post comments, 
 // needed even if add_theme_support( 'automatic-feed-links' ); not used
 remove_action('wp_head', 'feed_links_extra', 3 );

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Add conditional html5 shim to header
  * remembert to download the js file to your thmeme

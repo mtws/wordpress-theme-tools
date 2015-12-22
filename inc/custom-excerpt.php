@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /* A custom metabox containing a tinymce editor
  *
  * NOTE! This script needs the following files to work:

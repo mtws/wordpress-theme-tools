@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Add conditional inline script to footer
  * eg. depends on jQuery

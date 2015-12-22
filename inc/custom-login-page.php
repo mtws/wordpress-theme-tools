@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /* Change the logo link url */
 function mtws_login_logo_url() {
     return get_bloginfo( 'url' );

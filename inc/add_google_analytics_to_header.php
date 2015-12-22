@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Google Analytics to header
  */ 
