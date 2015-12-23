@@ -103,6 +103,16 @@ require( get_template_directory() . '/inc/add_conditional_inline_scripts_to_foot
  */
 require( get_template_directory() . '/inc/custom-admin-css.php' );
 
+/**
+ * Keep subscribers out of wp-admin
+ */
+require get_template_directory() . '/inc/disable-wp-admin-for-subscribers.php';
+
+/**
+ * Always redirect logins to referer
+ * Yseful if you never want tot show the users the wordpress login page
+ */
+require get_template_directory() . '/inc/always-redirect-logins.php';
 
 /**
  * Give the TinyMCE edtitor a custom stylesheet
